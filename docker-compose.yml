@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ergodox:
+    build: .
+    command: bash -c 'cd Keyboards && ./ergodox.bash'
+    volumes:
+      - .:/usr/src/kiibohd-controller
